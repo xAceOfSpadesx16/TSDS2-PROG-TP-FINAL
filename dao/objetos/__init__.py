@@ -3,3 +3,4 @@ from .habitacion import Habitacion
 from .medico import Medico
 from .movimiento import Movimiento
 from .paciente import Paciente
+from .abstracts import BaseModel

@@ -9,7 +9,7 @@ class Paciente:
     domicilio: str
     telefono: str
 
-    def to_dict(self):
+    def to_dict(self) -> dict:
         return {
             "id": self.id,
             "nombre": self.nombre,
@@ -19,5 +19,5 @@ class Paciente:
             "telefono": self.telefono
         }
 
-    def __str__(self):
+    def __str__(self) -> str:
         return f"Paciente: {self.nombre} (O.S.: {self.numero_afiliado})"

@@ -8,7 +8,7 @@ class Medico:
     matricula: int
     especialidad: str
 
-    def to_dict(self):
+    def to_dict(self) -> dict:
         return {
             "id": self.id,
             "nombre": self.nombre,
@@ -16,5 +16,5 @@ class Medico:
             "especialidad": self.especialidad
         }
     
-    def __str__(self):
+    def __str__(self) -> str:
         return f"Dr. {self.nombre} - {self.especialidad} (Matricula: {self.matricula})"

@@ -8,13 +8,7 @@ class Habitacion(BaseModel):
     tipo: str
     capacidad: int
 
-    def __init__(self, id: int, numero: int, tipo: str, capacidad: int):
-        self.id = id
-        self.numero = numero
-        self.tipo = tipo
-        self.capacidad = capacidad
-
-    def to_dict(self):
+    def to_dict(self) -> dict:
         return {
             "id": self.id,
             "numero": self.numero,
@@ -22,5 +16,5 @@ class Habitacion(BaseModel):
             "capacidad": self.capacidad
         }
 
-    def __str__(self):
+    def __str__(self) -> str:
         return f"Habitación {self.numero} - {self.tipo} (Cap.: {self.capacidad})"
